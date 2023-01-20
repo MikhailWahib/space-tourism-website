@@ -2,6 +2,10 @@ import React from 'react'
 
 export default function Home() {
     return (
-        <div>Home</div>
+        <main className='home text-white'>
+            <div className="relative top-0">
+                Home
+            </div>
+        </main>
     )
 }
