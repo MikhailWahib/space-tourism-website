@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;700&display=swap');
+
+
+:root {
+  font-size: 16px;
+  --heading-font: 'Bellefair', serif;
+  --regular-font: 'Barlow Condensed', sans-serif;
+}
+
+p {
+  color: #0B0D17;
+}
+
+.heading-1 {
+  font-size: 9.375rem;
+  font-family: var(--heading-font);
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.heading-2 {
+  font-size: 6.25rem;
+  font-family: var(--heading-font);
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.heading-3 {
+  font-size: 3.5rem;
+  font-family: var(--heading-font);
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.heading-4 {
+  font-size: 2rem;
+  font-family: var(--heading-font);
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.heading-4-dark {
+  font-size: 2rem;
+  font-family: var(--heading-font);
+  color: #0B0D17 ;
+  text-transform: uppercase;
+}
+
+.heading-5 {
+  font-size: 1.75rem;
+  font-family: var(--regular-font);
+  color: #D0D6F9;
+  letter-spacing: 4.72px; 
+  text-transform: uppercase;
+}
+
+.subheading-1 {
+  font-size: 1.75rem;
+  font-family: var(--heading-font);
+  color: #FFFFFF;
+}
+
+.subheading-2 {
+  font-size: 0.875rem;
+  font-family: var(--regular-font);
+  letter-spacing: 2.36px;
+  color: #FFFFFF;
+}
+
+.nav-text {
+  font-size: 1rem;
+  font-family: var(--regular-font);
+  letter-spacing: 2.7px;
+  color: #FFFFFF;
+}
+
+.body-text {
+  font-size: 1.125rem;
+  line-height: 178%;
+  color: #FFFFFF;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
