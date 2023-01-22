@@ -46,7 +46,7 @@ export default function Destination({ data }) {
 
                         </div>
                         <h3 className="heading-3 my-4 md:text-[5rem] md:my-5 lg:text-start lg:text-[6.25rem]">{data[current].name}</h3>
-                        <p className="body-text h-28 text-[0.9375rem] mb-9 md:text-[1.125rem] lg:text-[1.125rem] lg:text-start">{data[current].description}</p>
+                        <p className="body-text h-32 text-[0.9375rem] mb-9 md:text-[1.125rem] lg:text-[1.125rem] lg:text-start">{data[current].description}</p>
                         <hr className='opacity-25' />
                         <div className="mt-5 flex flex-col gap-y-5 md:flex-row md:justify-center md:gap-x-24 md:mt-10 lg:justify-start">
                             <div>
