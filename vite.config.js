@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   historyApiFallback: {
     rewrites: [
-      { from: /^\/[^\.]*$/, to: '/index.html' },
+      { from: /^\/[^\.]*$/, to: '/' },
     ]
   }
 })
