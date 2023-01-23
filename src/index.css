@@ -286,10 +286,11 @@ section {
     content: '';
     position: absolute;
     top: 0;
-    right: -3.8rem;
-    width: .3rem;
+    left: 120%;
+    width: .2rem;
     height: 100%;
     background-color: #fff;
+    opacity: .5;
   }
 }
 
