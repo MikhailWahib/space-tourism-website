@@ -163,6 +163,8 @@ section {
   background-color: #FFFFFF;
 }
 
+
+/* only lg screens */
 @media (min-width: 1024px) {
   section {
     padding-top: 7rem;
@@ -192,6 +194,8 @@ section {
   }
 }
 
+/* mid to lg screens */
+
 @media (min-width: 768px) {
   nav ul li {
     position: relative;
@@ -220,6 +224,8 @@ section {
 
 }
 
+/* xs to md */
+
 @media (max-width: 1024px) {
 
   main, section {
@@ -242,6 +248,8 @@ section {
     background-image: url('./assets/technology/background-technology-tablet.jpg');
   }
 }
+
+/* only small screens */
 
 @media (max-width: 768px) {
   
@@ -268,6 +276,20 @@ section {
   
   .technology {
     background-image: url('./assets/technology/background-technology-mobile.jpg');
+  }
+
+  nav ul li {
+    position: relative;
+  }
+
+  .active-nav::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -3.8rem;
+    width: .3rem;
+    height: 100%;
+    background-color: #fff;
   }
 }
 
