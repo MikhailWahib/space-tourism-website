@@ -226,10 +226,19 @@ section {
 
 /* xs to md */
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
 
   main, section {
     padding: 0rem 4.75rem;
+  }
+
+  
+  section {
+    padding-top: 6rem;
+  }
+
+  .body-text{
+    font-size: .5rem;
   }
 
   .home {
@@ -251,7 +260,7 @@ section {
 
 /* only small screens */
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   
   main, section {
     padding: 0rem 2rem;
