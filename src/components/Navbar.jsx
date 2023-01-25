@@ -14,10 +14,11 @@ export default function Navbar() {
 
     return (
         <header className='w-full z-50 absolute flex justify-between items-center p-[1.5rem] lg:p-0 lg:py-5 lg:mt-5'>
-
-            <div className="logo md:ml-[2.5rem]">
-                <img src={logo} alt="Logo" />
-            </div>
+            <Link to='/'>
+                <div className="logo md:ml-[2.5rem]">
+                    <img src={logo} alt="Logo" />
+                </div>
+            </Link>
 
             <button className="mobile-menu cursor-pointer md:hidden" onClick={handleToggle}>
                 <img src={menuIcon} alt="menu" />
