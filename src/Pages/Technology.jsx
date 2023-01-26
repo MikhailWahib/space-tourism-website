@@ -80,7 +80,7 @@ export default function Technology({ data }) {
                         >
                             <p className='subheading-2 leading-3 text-[1rem] lg:text-[1.5rem]'>The termenology ...</p>
                             <h3 className="heading-3 text-[1.75rem] my-2 md:text-[2.5rem] lg:text-[3.5rem]">{data[current].name}</h3>
-                            <p className="body-text text-[0.9375rem] px-5 md:text-[1rem] md:min-h-40 md:px-40 lg:w-[70%] lg:px-0">{data[current].description}</p>
+                            <p className="body-text text-[0.9375rem] px-5 h-46 md:text-[1rem] md:min-h-40 md:px-40 lg:w-[70%] lg:px-0 border">{data[current].description}</p>
                         </motion.div>
                     </div>
                 </div>
