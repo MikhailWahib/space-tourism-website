@@ -23,7 +23,7 @@ export default function Crew({ data }) {
         >
 
             <div className='lg:px-10 lg:pr-5'>
-                <h5 className="heading-5 text-white text-center md:text-start md:mb-8 lg:absolute lg:mb-0"><span className='font-bold opacity-25'>01</span> Meet your crew</h5>
+                <h5 className="heading-5 text-white text-center md:text-start md:mb-8 lg:absolute lg:mb-0"><span className='font-bold opacity-25'>02</span> Meet your crew</h5>
                 <div className="relative flex flex-col md:flex-col-reverse md:justify-between lg:flex-row-reverse lg:justify-between lg:text-start ">
                     <div className="crew-img min-h-[222px] max-h-[720px] h-[48vh] md:h-[55vh] lg:h-[75vh] py-8 mx-auto md:pb-0 lg:mx-0">
                         {imgs.map((el, i) => {
@@ -40,7 +40,13 @@ export default function Crew({ data }) {
                         })}
                         <hr className='opacity-25' />
                     </div>
-                    <div className="crew-btns flex justify-center gap-x-3 mb-5 lg:absolute lg:bottom-0 lg:left-0">
+                    <motion.div
+                        className="crew-btns flex justify-center gap-x-0 mb-5 lg:absolute lg:bottom-0 lg:left-0"
+
+                        initial={{ gap: '-1rem' }}
+                        animate={{ gap: '0.75rem' }}
+                        transition={{ ease: "easeIn", duration: .5 }}
+                    >
                         {data.map((el, i) => {
                             return <button
                                 key={i}
@@ -48,7 +54,7 @@ export default function Crew({ data }) {
                                 className={`h-[0.625rem] w-[0.625rem] bg-white rounded-full md:h-3.5 md:w-3.5 ${current === i ? 'opacity-100' : 'opacity-25'}`}
                             ></button>
                         })}
-                    </div>
+                    </motion.div>
                     <div className='lg:w-[42%] my-auto'>
                         <motion.div
                             key={`planet-${current}`}
